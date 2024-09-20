@@ -27,8 +27,38 @@ section{
 }
 .hidden{
     opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
 }
 
 .show{
     opacity: 1;
+    transition: all 1s;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logos{
+    display:flex;
+    gap: 20px;
+}
+
+.avatar{
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.logos:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.logos:nth-child(3){
+    transition-delay: 800ms;
+}
+
+.logos:nth-child(4){
+    transition-delay: 1200ms;
 }
